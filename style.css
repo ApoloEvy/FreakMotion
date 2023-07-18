@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+body{
+    background-color: #13002c;
+    font-family: 'Roboto Slab', serif;
+  }
+header{
+    background-color: #0a0214;
+    height: 4rem;
+}
+.fkm{
+    text-decoration: none;
+}
+.ul-itens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.red-line{
+color: rgb(78, 1, 1);
+}
+.li-itens{
+    list-style: none;
+}
+.a-item{
+    text-decoration: none;
+}
+.criar{
+        background-color: rgb(78, 1, 1);
+        color: #fff;
+        padding: 8px;
+        text-decoration: none;
+        border-radius: 30px;
+}
+.a-item:hover{
+font-size: 1.8rem;
+color: rgb(78, 1, 1);
+transition: 0.2s;
+}
+.criar:hover{
+    background-color: #13002c;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 34px;
+} 
+
+ /* carrosel de imagens */
+
+.slider{
+    margin: 10px auto; 
+    box-shadow: #0a0214;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+}
+.slide img {
+    width: 800px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+border: 2px solid #5600e0;
+padding: 5px;
+border-radius: 10px;
+cursor: pointer;
+transition: 0.40s;
+}
+.manual-btn:not(:last-child){
+    margin: 10px;
+}
+.manual-btn:hover{
+    background-color: #fff;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+    transition: 0.5s;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+    transition: 0.5s;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+    transition: 0.5s;
+}
+.navigation-auto div{
+    border: 2px solid rgb(116, 41, 214);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div :not(:-last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked .navigation-auto .manual-btn1{
+    background-color: #13002c;
+}
+/* fim dos sliders */
+
+/* corpo site */
+.fnc{ 
+    
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+     display: flex;
+
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+}
+
+.fnc:hover{
+    font-size: 1.2rem;
+    transition: 0.4s;
+}
+.card1{
+   display: flex;
+   justify-content: space-around;
+}
+
+.templateA{
+    max-width: 20ch;
+}
+.templateA{
+    text-decoration: none;
+}
+.templateA:hover{
+    font-size: 1.2rem;
+    transition: 0.4s;
+}
+.h2title{
+    font-size: 1.2rem;
+    margin-top: 4px;
+}
+
+.card1 img{
+    border-radius: 5px;
+}
+.imganimation:hover{
+  width: 250px;
+  transition: 0.7s
+}
+
+.vejamais{
+    display: flex;
+    justify-content: center;
+    font-size:  20px;
+}
+.vejamaisA{
+    text-decoration: none;
+}
+.vejamaisA:hover{
+    text-decoration: underline;
+}
+.titulo{
+   position: relative;
+   left: 3rem;
+}
+
+
+/* fim do corpo do site */
+
+
+/* site para telas menores */
+ 
+@media screen and (max-width: 770px){
+    nav{
+        padding: 1rem;
+}
+.ul-itens{
+    font-size: 1rem;
+    justify-content: space-around;
+}
+.logo{
+    display: none;
+}
+
+}
