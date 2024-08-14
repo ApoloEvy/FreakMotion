@@ -10,7 +10,13 @@ body{
   }
 header{
     background-color: #0a0214;
-    height: 4rem;
+    height: 3.5rem;
+}
+.logo{
+    margin-top: 10px;
+}
+.li-itens{
+    margin-top: 10px;
 }
 .fkm{
     text-decoration: none;
@@ -28,6 +34,9 @@ color: rgb(78, 1, 1);
 }
 .a-item{
     text-decoration: none;
+}
+.loginbutton{
+    margin-top: 10px;
 }
 .criar{
         background-color: rgb(78, 1, 1);
